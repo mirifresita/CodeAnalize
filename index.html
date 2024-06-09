@@ -19,16 +19,15 @@
         <br>
         <button type="button" onclick="login()">Login</button>
     </form>
+<img src="CT.jpeg" onerror='alert(1)'> 
+
+
     <script>
-        function login() {
+        function login() {        //Save credentials in server
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            //Save credentials in server
-            if (username === 'admin' && password === 'admin123') {
-                alert('Login successful!');
-            } else {
-                alert('Invalid credentials!');
-            }
+            
+           //<img src='x' onerror='alert(1)'>
             document.body.innerHTML += `<p>Welcome, ${username}!</p>`;
         }
     </script>
