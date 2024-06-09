@@ -17,18 +17,26 @@
         <input type="password" id="password" name="password">
         <br>
         <br>
-        <button type="button" onclick="login()">Login</button>
+        <button type="button" onclick="login()">Login</button> 
     </form>
-<img src="CT.jpeg" onerror='alert(1)'> 
 
+    
 
     <script>
-        function login() {        //Save credentials in server
+        function encodeHTML(str) {
+            return str.replace(/&/g, '&amp;')
+                      .replace(/</g, '&lt;')
+                      .replace(/>/g, '&gt;')
+                      .replace(/"/g, '&quot;')
+                      .replace(/'/g, '&#39;');
+        }
+
+        function login() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            
-           //<img src='x' onerror='alert(1)'>
-            document.body.innerHTML += `<p>Welcome, ${username}!</p>`;
+
+            // Simulación de autenticación, no seguro para producción
+            document.body.innerHTML += `<p>Welcome, ${encodeHTML(username)}!</p>`;
         }
     </script>
 </body>
