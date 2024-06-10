@@ -24,6 +24,7 @@ function encodeHTML(str) {
 } 
 ```
 
+
 2. The login function must use encodeHTML to sanitize the username before inserting it into the DOM.
 
 ```javascript
