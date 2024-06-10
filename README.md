@@ -1,6 +1,6 @@
 # CodeAnalize
 
-###ABOUT THE CODE 
+## ABOUT THE CODE 
 
 This code represents a simple web page with a login form and some JavaScript functionality.
 
